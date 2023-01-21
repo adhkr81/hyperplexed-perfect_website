@@ -16,9 +16,9 @@ export default function Navbar() {
             <a>WORK</a> 
         </div>
         <div id={styles.navSocialSection} className={styles.navSection}>
-            <Instagram className={styles.logoStyles} />
-            <Linkedin className={styles.logoStyles} />
-            <Twitter className={styles.logoStyles} />
+            <a><Instagram className={styles.logoStyles} /></a>
+            <a><Linkedin className={styles.logoStyles} /></a>
+            <a><Twitter className={styles.logoStyles} /></a>
         </div>
         <div id={styles.navContactSection} className={styles.navSection}>
             <a>GET IN TOUCH</a> 
