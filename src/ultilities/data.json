@@ -1,0 +1,17 @@
+[
+    {    "title": "TOKYO, JAPAN 07:00 PM",
+        "description": "Tokyo, formerly (until 1868) Edo, city and capital of Tokyo to (metropolis) and of Japan.",
+        "image": "url(/img/japan.jpg)"},
+
+    {    "title": "SAO PAULO, BRAZIL 08:00 PM",
+        "description": "São Paulo (/ˌsaʊ ˈpaʊloʊ/, Portuguese: [sɐ̃w̃ ˈpawlu] (listen); Portuguese for 'Saint Paul') is the most populous city in Brazil.",
+        "image": "url(/img/city.jpg)"},
+        
+    {    "title": "BERLIN, GERMANY 11:00 PM",
+        "description": "After World War II and its subsequent occupation by the victorious countries, the devastated city was divided; West Berlin became a de facto exclave of West Germany, surrounded by the Berlin Wall (from August 1961 to November 1989) and East.",
+        "image": "url(/img/galaxy.jpg)"},
+        
+    {    "title": "VENICE, ITALY 05:00 PM",
+        "description": "The name is derived from the ancient Veneti people who inhabited the region by the 10th century BC.[6][7] The city was historically the capital of the Republic of Venice for over a millennium, from 697 to 1797.",
+        "image": "url(/img/grandcanal.jpg)"} 
+]

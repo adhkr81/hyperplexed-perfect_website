@@ -1,4 +1,4 @@
-import Button from "../../atoms/Button/Button"
+import Button from "../../atoms/button/Button"
 import styles from "./buttonNav.module.css"
 import { ReactComponent as LeftArrowIcon } from "../../../assets/arrow_left.svg"
 import { ReactComponent as RightArrowIcon } from "../../../assets/arrow_right.svg"

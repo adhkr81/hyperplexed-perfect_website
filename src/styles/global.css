@@ -13,7 +13,7 @@
 body {
     background-color: var(--background-color);
     margin: 0px;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 h1, h2, h3, a, p, span {
@@ -37,7 +37,7 @@ a {
 .container {
     width: 100%;
     max-width: 1440px;
-    height: 800px;
+    /* height: 800px; */
     background-color: var(--container-color);
     display: flex;
     flex-direction: column;

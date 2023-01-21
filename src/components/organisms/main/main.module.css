@@ -1,12 +1,3 @@
-p {
-    position: relative;
-    bottom: -75%;
-    padding-left: 3rem;
-    padding-right: 3rem;
-    margin: 0 auto;
-    overflow: hidden;
-}
-
 main {
     flex-grow: 1;
 }
