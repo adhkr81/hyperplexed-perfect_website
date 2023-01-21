@@ -1,0 +1,40 @@
+p {
+    position: relative;
+    bottom: -75%;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+main {
+    flex-grow: 1;
+}
+
+article {
+    display: grid;
+    height: 100%;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 2fr 1fr
+}
+
+.articleSection {
+    height: 100%;
+    border: 1px solid var(--border-color);
+}
+
+.articleImageSection {
+    height: 100%;
+}
+
+.articleDescriptionSection {
+    height: 100%;
+}
+
+.articleTitleSection {
+    height: 100%;
+}
+
+.articleNavSection {
+    height: 100%;
+}

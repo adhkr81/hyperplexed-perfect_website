@@ -1,0 +1,41 @@
+.logoStyles {
+    width: 25px;
+    height: 25px;
+}
+
+nav {
+    display: flex;
+    width: 100%;
+    border-bottom: 1px solid var(--border-color)
+}
+
+nav > .navSection {
+    padding: 3rem 2rem;
+    display: flex;
+    gap: 1rem;
+    border-left: 1px solid var(--border-color);
+    align-items: center;
+    justify-content: center;
+}
+
+#navLogoSection {
+    justify-content: flex-start;
+}
+
+#navLinkSection {
+    gap: 6rem
+}
+
+#navSocialSection {
+    gap: 3rem
+}
+
+#navLogoSection,
+#navLinkSection {
+    flex-basis: calc(100% / 3)
+}
+
+#navSocialSection,
+#navContactSection {
+    flex-grow: 1
+}
