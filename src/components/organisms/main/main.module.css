@@ -1,12 +1,20 @@
 main {
     flex-grow: 1;
+    position: relative
 }
 
 article {
     display: grid;
     height: 100%;
     grid-template-columns: 2fr 1fr;
-    grid-template-rows: 2fr 1fr
+    grid-template-rows: 2fr 1fr;
+    position: absolute;
+    left: 0px;
+    top: 0px
+}
+
+article[status="inactive"] {
+    transform: translateX(-100%);
 }
 
 .articleSection {
