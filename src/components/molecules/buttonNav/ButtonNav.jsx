@@ -8,52 +8,56 @@ import { useState, useEffect } from "react"
 export default function ButtonNav({i, refArray}) {
 
     const [ activeIndex, setActiveIndex ] = useState(0)
-
-    useEffect(() => {
-        console.log(activeIndex);
-      }, [activeIndex]);
-//WHY STATE IS NOT UPDATING???????????
+    const [ nextIndex, setNextIndex ] = useState(0)
 
     function handleLeft() {
         // Checks if index needs to be reset to loop 
         const nextIndex = activeIndex - 1 >= 0 ? activeIndex - 1 : 3;
 
+        // Active group becomes inactive
         const currentArticle = refArray.current[activeIndex]
-        const nextArticle = refArray.current[nextIndex]
-
-        // Active group becomes inactive (go left)
         refArray.current[activeIndex].setAttribute("data-status", "inactive")
 
         // Next article becomes active
+        const nextArticle = refArray.current[nextIndex]
         refArray.current[nextIndex].setAttribute("data-status", "active")
 
-        console.log(nextIndex)
-        setActiveIndex((nextIndex) => {return nextIndex})
-        
+        // console.log(nextIndex)
+        // setActiveIndex(() => {return nextIndex})
     }
 
     function handleRight() {
-
         // Checks if index needs to be reset to loop 
         const nextIndex = activeIndex + 1 <= 4 ? activeIndex + 1 : 0;
+        console.log(nextIndex)
 
+        // Active group becomes inactive 
         const currentArticle = refArray.current[activeIndex]
-        const nextArticle = refArray.current[nextIndex]
-
-        // Active group becomes inactive (go left)
         refArray.current[activeIndex].setAttribute("data-status", "inactive")
 
         // Next article becomes active
+        const nextArticle = refArray.current[nextIndex]
         refArray.current[nextIndex].setAttribute("data-status", "active")
 
-        console.log(nextIndex)
-        setActiveIndex((nextIndex) => {return nextIndex})
-        
+        // console.log(nextIndex)
+        // setActiveIndex(() => {
+        //     console.log(nextIndex)
+        //     return nextIndex})
+
+
+        // const length = refArray.current.length
+        // setActiveIndex(activeIndex === length - 1 ? 0 : activeIndex + 1)
+
+        // console.log(activeIndex)
     }
 
     useEffect(() => {
         console.log(refArray.current);
-      }, [refArray]);
+      }, [refArray]);     
+
+    useEffect(() => {
+        console.log(activeIndex);
+      }, [activeIndex]);
 
     return(
         <div className={styles.container}>
