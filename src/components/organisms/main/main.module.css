@@ -13,7 +13,7 @@ article {
     top: 0px
 }
 
-article[status="inactive"] {
+article[data-status="inactive"] {
     transform: translateX(-100%);
 }
 

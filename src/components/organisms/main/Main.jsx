@@ -10,7 +10,6 @@ import { useState, useRef, useEffect } from "react"
 
 export default function Main () {
 
-    const [ activeArticle, setActiveArticle ] = useState(null) 
     const refArray = useRef([]) 
 
     useEffect(() => {
@@ -21,14 +20,13 @@ export default function Main () {
 
     useEffect(() => {
         console.log(refArray.current);
-        console.log(refArray.current[2].getAttribute("status"));
       }, [refArray]);
 
     return (
         <main>
             {data.map((current, i) => {
                 return (
-                <article key={i} ref={(element) => refArray.current.push(element)} status={current.status}>
+                <article ref={(element) => refArray.current.push(element)} data-status={current.status} data-index={i}>
                     <div style={{ backgroundImage: `${current.image}`,
                                 backgroundPosition: "center",
                                 backgroundRepeat: "no-repeat" }} 
@@ -41,7 +39,7 @@ export default function Main () {
                         <Title data={current.title}/>
                     </div>
                     <div className={styles.articleSection}>
-                        <ButtonNav index={i} setActiveArticle={setActiveArticle} refArray={refArray}/>  
+                        <ButtonNav refArray={refArray} i={i}/>  
                     </div>
                 </article> 
                 )
