@@ -8,14 +8,14 @@ article {
     height: 100%;
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 2fr 1fr;
-    position: absolute;
+    /* position: absolute;
     left: 0px;
-    top: 0px
+    top: 0px */
 }
 
-article[data-status="inactive"] {
+/* article[data-status="inactive"] {
     transform: translateX(-100%);
-}
+} */
 
 .articleSection {
     height: 100%;

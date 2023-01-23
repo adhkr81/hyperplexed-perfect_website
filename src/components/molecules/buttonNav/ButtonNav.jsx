@@ -10,6 +10,11 @@ export default function ButtonNav({i, refArray}) {
     const [ activeIndex, setActiveIndex ] = useState(0)
     const [ nextIndex, setNextIndex ] = useState(0)
 
+
+    // useEffect(() => {
+    //     console.log(activeIndex);
+    //   }, [activeIndex]);
+
     function handleLeft() {
         // Checks if index needs to be reset to loop 
         const nextIndex = activeIndex - 1 >= 0 ? activeIndex - 1 : 3;
@@ -22,8 +27,11 @@ export default function ButtonNav({i, refArray}) {
         const nextArticle = refArray.current[nextIndex]
         refArray.current[nextIndex].setAttribute("data-status", "active")
 
+
+        // -----------------------------------------------------------------------------------
         // console.log(nextIndex)
         // setActiveIndex(() => {return nextIndex})
+        console.log(activeIndex)
     }
 
     function handleRight() {
@@ -39,25 +47,22 @@ export default function ButtonNav({i, refArray}) {
         const nextArticle = refArray.current[nextIndex]
         refArray.current[nextIndex].setAttribute("data-status", "active")
 
+
+        // -----------------------------------------------------------------------------------
         // console.log(nextIndex)
         // setActiveIndex(() => {
         //     console.log(nextIndex)
         //     return nextIndex})
 
-
         // const length = refArray.current.length
         // setActiveIndex(activeIndex === length - 1 ? 0 : activeIndex + 1)
 
-        // console.log(activeIndex)
+        // console.log(activeIndex) 
     }
 
     useEffect(() => {
         console.log(refArray.current);
-      }, [refArray]);     
-
-    useEffect(() => {
-        console.log(activeIndex);
-      }, [activeIndex]);
+      }, [refArray]);
 
     return(
         <div className={styles.container}>
